@@ -1,25 +1,17 @@
-package com.driver; // Ensure this matches the directory structure
+package com.driver;
 
 public class Main {
-    static class Product {
-        public int product(int x, int y) {
-            return x * y;
-        }
-
-        public int product(int x, int y, int z) {
-            return x * y * z;
-        }
-
-        public double product(double x, double y) {
-            return x * y;
-        }
-    }
-
     public static void main(String[] args) {
+        // Create an object of the Product class
         Product p = new Product();
 
-        System.out.println("Product of 2 integers: " + p.product(5, 4));
-        System.out.println("Product of 3 integers: " + p.product(5, 4, 2));
+        // Call the method to calculate the product of 2 integers
+        System.out.println("Product of 2 integers: " + p.product(4, 5));
+
+        // Call the method to calculate the product of 3 integers
+        System.out.println("Product of 3 integers: " + p.product(2, 2, 10));
+
+        // Call the method to calculate the product of 2 doubles
         System.out.println("Product of 2 doubles: " + p.product(5.5, 4.4));
     }
 }
